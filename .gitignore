@@ -1,0 +1,11 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+.idea/
+.git/
+*.gitattributes
+*.gitmodules
+*.bash_history
+*.bash_logout
+*.bash_profile
+*.bashrc
