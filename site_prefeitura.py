@@ -2,9 +2,9 @@ from time import sleep
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
 from datetime import datetime
 import calendar
+import pyautogui as auto
 
 usuario = '78396409234'
 senha = 'asc756321'
@@ -59,7 +59,7 @@ for x in range(len(numero_empresas)):
     sleep(3)
     navegador.find_element('xpath', '//*[@id="form:cbImprimirButton"]').click()
     sleep(2)
-    navegador.find_element('xpath', '//*[@id="download"]').click()
+    navegador.find_element('xpath', '//*[@id="download"]').click() #quebra
     sleep(1)
     campo_ativo = navegador.switch_to.active_element.send_keys("nosso")
     #falta montar o caminho onde vai salvar o pdf com o nome da empresa automatico
