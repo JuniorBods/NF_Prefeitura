@@ -143,6 +143,7 @@ for x in range(len(numero_empresas)):
                     print('Sem Notas Fiscais para serem geradas')
             else:
                 print('Arquivo Existente')
+                #vamos terminar
 
 if __name__ == '__main__':
     pass
