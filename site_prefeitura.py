@@ -2,12 +2,12 @@ from time import sleep
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.alert import Alert
 # from selenium.webdriver.chrome.options import Options
 from datetime import datetime
 import calendar
 from tkinter import filedialog
 import os
+import streamlit as st
 
 ''' 1 - TERMINAR DE SEPARAR AS FUNÇÕES
     2 - CRIAR A FUNÇÃO PARA MOSTRAR AS EMPRESAS E DEIXAR ELE SELECIONAR
@@ -18,8 +18,8 @@ import os
 # usuario = '78396409234'
 # senha = 'asc756321'
 
-usuario = input("Usuario: ")
-senha = input("Senha: ")
+usuario = st.text_input("Usuario")
+senha = st.text_input("Senha", type='password')
 
 pasta_raiz = filedialog.askdirectory()
 

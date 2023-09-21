@@ -1,0 +1,9 @@
+[[pages]]
+path = "main.py"
+name = "Home"
+icon = "🏠"
+
+[[pages]]
+path = "site_prefeitura.py"
+name = "Prefeitura Ji-Paraná"
+icon = "📂"
